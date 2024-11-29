@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <title>ShapeX</title>
+</head>
+<body>
+  <div id="content-geral">
+    <ul id="header">
+      <li id="logo">ShapeX</li>
+      <li id="header-historico" onclick="openModal()">Histórico</li>
+    </ul>
+    
+
+    <div id="dentro-da-borda" class="campo">
+    <div id="escopo-calc" class="campo">
+      <div id="controls" class="campo">
+        <div class="control">
+          <label for="shape-type">Selecione a forma:</label>
+          <select id="shape-type">
+            <option value="cube">Cubo</option>
+            <option value="pyramid">Pirâmide</option>
+            <option value="sphere">Esfera</option>
+          </select>
+        </div>
+
+        <div class="controls">
+          <label for="x-dimension">Dimensão X</label>
+          <input type="text" id="x-dimension" class="inputDimension" placeholder="Digite o valor em cm">
+          <span class="error-message" id="x-error" style="color: red;"></span>
+        </div>
+
+        <div class="controls" id="y-dimension-container">
+          <label for="y-dimension">Dimensão Y</label>
+          <input type="text" id="y-dimension" class="inputDimension" placeholder="Digite o valor em cm">
+          <span class="error-message" id="y-error" style="color: red;"></span>
+        </div>
+
+        <div class="controls" id="z-dimension-container">
+          <label for="z-dimension">Dimensão Z</label>
+          <input type="text" id="z-dimension" class="inputDimension" placeholder="Digite o valor em cm">
+          <span class="error-message" id="z-error" style="color: red;"></span>
+        </div>
+
+
+        <section id="ocr-section">
+          <br>
+          <input type="file" id="image-input" accept="image/*">
+          <br>
+          <br>
+          <button onclick="transcribeAndDistribute()">Ler dimensões</button>
+          <br>
+          <br>
+        
+        <!-- Mudar tudo isso e colocar o resultado pronto em uma div na parte inferior do site ->
+        <label for="calc-type">Selecione o cálculo</label>
+        <select id="calc-type">  
+          <option value="area"></option>
+          <option value="volume"></option>
+          <option value="apotema"></option>
+          <option></option>
+        </select> -->
+
+        <button onclick="calculateVolume()">Calcular Volume</button>
+        <button style="display: none" onclick="calculateArea()">Calcular Área</button>
+        <button style="display: none" onclick="calculateVolume()">Calcular Volume</button>
+        <button style="display: none" onclick="calculateApotema()">Calcular Apótema</button>
+        
+        <br>
+        <br>
+
+        <button onclick="updateShape()"> Atualizar Dados e Forma</button>
+        <div id="volume-display" style="margin-top: 10px;"></div>
+        <button style="display: none" onclick="window.location.href='historico.html'">Histórico</button>
+        <br>
+        <br>
+        <button style="display: none" onclick="window.location.href='index.html'">Voltar ao Início</button>
+      </div>
+
+     <div id="simulacao" class="campo"></div> 
+    </div>
+
+    <div id="historico-modal" class="modal">
+      <div class="modal-content">
+        <span class="close-btn" onclick="closeModal()">&times;</span>
+        <h2>Histórico de Cálculos</h2>
+        <div id="historico-content">
+        </div>
+      </div>
+    </div>
+  <!--
+    <div id="escopo-results" class="campo">
+      <h1>Solução</h1>
+      <span id="results"></span>
+    </div>
+    </div>
+
+    <div id="manual">
+
+       </div>
+  </div>
+ -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/tesseract.js@2.1.4/dist/tesseract.min.js"></script>
+  <script src="app.js"></script>
+  <script src="ocr.js"></script>
+</body>
+
+
+</html>

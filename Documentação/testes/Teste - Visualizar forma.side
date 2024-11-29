@@ -1,0 +1,183 @@
+{
+  "id": "00add8ae-e03d-4f3f-b86c-68781e5cae0c",
+  "version": "2.0",
+  "name": "Teste - Funções de Visualizar Forma",
+  "url": "https://hewrick.github.io",
+  "tests": [{
+    "id": "fad8dbfb-2872-4e5a-994a-e9e14b672265",
+    "name": "Caso de teste 01: Valores válidos de entrada e saída, números inteiros",
+    "commands": [{
+      "id": "e196dec1-d1c9-4488-bb7a-a067c123abbb",
+      "comment": "",
+      "command": "open",
+      "target": "/tcc-ds/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "da9b3aba-1475-47e2-bd5a-bd4dcfa53e61",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "945x1020",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "664fa212-c898-48ea-9d2a-7fda2125c1a6",
+      "comment": "",
+      "command": "open",
+      "target": "/tcc-ds/geometry.html",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "7a860166-650e-4ff9-9528-a244a0cd3f14",
+      "comment": "",
+      "command": "click",
+      "target": "id=x-dimension",
+      "targets": [
+        ["id=x-dimension", "id"],
+        ["css=#x-dimension", "css:finder"],
+        ["xpath=//input[@id='x-dimension']", "xpath:attributes"],
+        ["xpath=//div[@id='controls']/div[2]/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "4aaa5247-2888-46c5-be2a-b390350b7a23",
+      "comment": "",
+      "command": "type",
+      "target": "id=x-dimension",
+      "targets": [
+        ["id=x-dimension", "id"],
+        ["css=#x-dimension", "css:finder"],
+        ["xpath=//input[@id='x-dimension']", "xpath:attributes"],
+        ["xpath=//div[@id='controls']/div[2]/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "4"
+    }, {
+      "id": "966534da-a19e-48af-a09d-d3867f0f30b5",
+      "comment": "",
+      "command": "click",
+      "target": "id=y-dimension",
+      "targets": [
+        ["id=y-dimension", "id"],
+        ["css=#y-dimension", "css:finder"],
+        ["xpath=//input[@id='y-dimension']", "xpath:attributes"],
+        ["xpath=//div[@id='y-dimension-container']/input", "xpath:idRelative"],
+        ["xpath=//div[3]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "16a5bee1-7b2f-4058-98ae-9362e68656d3",
+      "comment": "",
+      "command": "type",
+      "target": "id=y-dimension",
+      "targets": [
+        ["id=y-dimension", "id"],
+        ["css=#y-dimension", "css:finder"],
+        ["xpath=//input[@id='y-dimension']", "xpath:attributes"],
+        ["xpath=//div[@id='y-dimension-container']/input", "xpath:idRelative"],
+        ["xpath=//div[3]/input", "xpath:position"]
+      ],
+      "value": "5"
+    }, {
+      "id": "1a2384a8-409a-45e4-a434-38d0973402cf",
+      "comment": "",
+      "command": "click",
+      "target": "id=z-dimension",
+      "targets": [
+        ["id=z-dimension", "id"],
+        ["css=#z-dimension", "css:finder"],
+        ["xpath=//input[@id='z-dimension']", "xpath:attributes"],
+        ["xpath=//div[@id='z-dimension-container']/input", "xpath:idRelative"],
+        ["xpath=//div[4]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "0f111dd5-504d-4513-ab64-b3985b06c37d",
+      "comment": "",
+      "command": "type",
+      "target": "id=z-dimension",
+      "targets": [
+        ["id=z-dimension", "id"],
+        ["css=#z-dimension", "css:finder"],
+        ["xpath=//input[@id='z-dimension']", "xpath:attributes"],
+        ["xpath=//div[@id='z-dimension-container']/input", "xpath:idRelative"],
+        ["xpath=//div[4]/input", "xpath:position"]
+      ],
+      "value": "6"
+    }, {
+      "id": "be28076f-db81-470b-adeb-0dabb540a3b9",
+      "comment": "",
+      "command": "click",
+      "target": "css=button:nth-child(8)",
+      "targets": [
+        ["css=button:nth-child(8)", "css:finder"],
+        ["xpath=//button[@onclick='updateShape()']", "xpath:attributes"],
+        ["xpath=//div[@id='controls']/button[2]", "xpath:idRelative"],
+        ["xpath=//button[2]", "xpath:position"],
+        ["xpath=//button[contains(.,'ATUALIZAR DADOS & FORMA')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "1dd4c8f5-8a76-4261-b887-486af1cec8c7",
+    "name": "Caso de teste 02: Valores inválidos de entrada - números além do alcance de processamento",
+    "commands": [{
+      "id": "46a5a486-4cae-4b33-927f-9014bfd22088",
+      "comment": "",
+      "command": "open",
+      "target": "/tcc-ds/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "5dd92789-8d91-4b6a-a83f-24c022825361",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "945x1020",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "64f4f2dc-dd9e-4964-bf68-e3d164e2f314",
+      "comment": "",
+      "command": "open",
+      "target": "/tcc-ds/geometry.html",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "998968c4-6db9-45b6-a28a-bf01d31fddb9",
+    "name": "Caso de teste 03: Valores inválidos de entrada - texto ou símbolo",
+    "commands": [{
+      "id": "a260bb3a-1f92-4be4-9868-0eb6d83f5a9b",
+      "comment": "",
+      "command": "open",
+      "target": "/tcc-ds/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "ee8f1972-6ca6-44df-b8f3-dcc6349e433f",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "945x1020",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "3d88c580-dd83-4ec5-aec4-f44b199bd747",
+      "comment": "",
+      "command": "open",
+      "target": "/tcc-ds/geometry.html",
+      "targets": [],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "7d32bf9e-5a32-4640-a98b-38995a86a03a",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["fad8dbfb-2872-4e5a-994a-e9e14b672265"]
+  }],
+  "urls": ["https://hewrick.github.io/"],
+  "plugins": []
+}
